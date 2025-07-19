@@ -2,14 +2,14 @@
 
 ## Overview
 
-This project implements a robust data pipeline to ingest, normalize, process, and store affiliate marketing transactions from multiple affiliate networks. It applies configurable commission rules, ensures idempotency, logs ingestion events, and simulates syncing commission data with an external affiliate API.
+This project implements a robust data pipeline to clean, ingest, process, and store affiliate marketing transactions from multiple affiliate networks. It applies configurable commission rules, ensures idempotency, logs ingestion events, and simulates syncing commission data with an external affiliate API.
 
 ## Features
 
 - Ingest CSV files from multiple networks with varying schemas
 - Normalize data fields into a unified format
 - Calculate commissions using a configurable JSON file with base rates and bonus rules
-- Persist data using SQLite (easily swappable for other databases such as Postgres or AWS Aurora)
+- Persist data using SQLite (easily swappable for other databases such as Postgres or AWS Aurora/Redshift)
 - Maintain ingestion and commission logs for auditing and monitoring
 - Retry logic with exponential backoff for external API commission sync calls
 - Idempotent transactions to avoid duplicates on re-ingestion

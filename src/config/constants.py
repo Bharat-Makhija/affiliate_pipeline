@@ -1,0 +1,1 @@
+DB_URL = "sqlite:///src/db/affiliate.db"

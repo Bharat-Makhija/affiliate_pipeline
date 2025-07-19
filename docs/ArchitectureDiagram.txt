@@ -1,0 +1,11 @@
+    CSV Files
+       ↓
+ [ETL Pipeline]
+  ├─ Normalize & Clean
+  ├─ Commission Calculation
+  ├─ Idempotency Handling
+  ├─ Logging & Error Handling     ──→ Logs Table
+  ├─ External API Sync (aff_01)  ──→ API Sync (Simulated)
+  └─ Data Persistence            ──→ affiliate_transactions Table
+       ↓
+  Integration Test Suite

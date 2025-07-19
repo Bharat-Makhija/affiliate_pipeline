@@ -1,0 +1,5 @@
+{
+  "networkA": {"baseRate": 0.1},
+  "networkB": {"baseRate": 0.12, "bonus": {"minAmount": 100, "additionalRate": 0.02}},
+  "default": {"baseRate": 0.05}
+}
